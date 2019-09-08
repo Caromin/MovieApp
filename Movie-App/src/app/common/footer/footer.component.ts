@@ -6,7 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./footer.component.css"]
 })
 export class FooterComponent implements OnInit {
-  public footerLinks: object[] = [
+  // if using object[] has to be an interface, otherwise will not build
+  public footerLinks: any[] = [
     { title: "Home", url: "/" },
     { title: "Contacts", url: "/contacts" },
     { title: "Login", url: "/login" },
