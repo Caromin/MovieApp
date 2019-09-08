@@ -1,12 +1,19 @@
 <div id="footer">
-  <div id="footer links" title="footer links" class="w-100 pt-2 row">
+  <div id="footer links" title="footer links" class="w-100 row">
     <div class="col-1"></div>
-    <div *ngFor="let link of footerLinks">
-      <a id="footer{{ link.title }}" title="link.title">{{ link.title }}</a>
+    <div *ngFor="let link of footerLinks" class="p-2 m-1">
+      <a
+        id="footer{{ link.title }}"
+        title="{{ link.title }}"
+        href="{{ link.url }}"
+        class="footerLinks"
+        [ngStyle]="{ color: '#9ab' }"
+        >{{ link.title }}</a
+      >
     </div>
     <div class="col-1"></div>
   </div>
-  <div id="copyright" title="copyright" class="text-center pt-2">
+  <div id="copyright" title="copyright" class="text-center">
     <small>
       &copy; MovieWorks App. This an application created by Christian A, Narely
       N, Oak T
