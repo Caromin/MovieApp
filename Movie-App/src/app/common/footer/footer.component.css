@@ -4,3 +4,11 @@
   color: #fff;
   background-color: #2c3440;
 }
+
+.footerLinks {
+  font-weight: 600;
+}
+
+.footerLinks:hover {
+  text-decoration: none;
+}
