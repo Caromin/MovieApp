@@ -1,0 +1,32 @@
+.kinda-black
+{
+  background: rgba(0,0,0,0.7)
+}
+
+.column {
+  display: block;
+  border: 3px solid;
+  width: 25%;
+  padding: 5px;
+
+}
+
+.row::after {
+  float: left;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1
+{
+  font-family: 'Righteous', cursive;
+  position: relative;
+  top: 5px;
+}
+
+h2{
+  font-family: 'Righteous', cursive;
+  position: relative;
+  top: 5px;
+}
