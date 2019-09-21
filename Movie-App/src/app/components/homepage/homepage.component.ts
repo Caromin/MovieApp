@@ -7,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-
-  Description:string = 'Find Your Favorite Movies';
-  Description2:string = 'ITS VERY COOL!';
+  description:string = 'Find Your Favorite Movies';
+  description2:string = 'ITS VERY COOL!';
   constructor() { }
 
   ngOnInit() {
